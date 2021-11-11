@@ -1,6 +1,6 @@
 # tensorflow-m1-docker
 
-Binary Python wheel package for Tensorflow inside Docker. Should work on any platform, but useful for M1/Apple Silicon
+Binary Python wheel package for Tensorflow inside Docker. This is most useful for M1/Apple Silicon. However, by replacing the `BAZELISK` build argument in the below example, this should also work on other platforms.
 
 ```bash
 docker build \
