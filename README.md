@@ -10,3 +10,11 @@ docker build \
     -t tensorflow \
     .
 ```
+
+At the end of the build the location of the `whl` file in the Docker image should be output to the console: it is likely to be of the form `/tmp/tensorflow_pkg/tensorflow-<version>-<tags>.whl`. To copy it out of Docker to the local filesystem edit and run the below:
+
+```bash
+docker create --name tensorflow tensorflow
+docker cp tensorflow:/tmp/tensorflow_pkg/tensorflow-<version>-<tags>.whl .
+docker rm -f tensorflow
+```
