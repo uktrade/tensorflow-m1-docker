@@ -7,6 +7,6 @@ docker build \
     --build-arg BASE="python:3.7-buster" \
     --build-arg BAZELISK="https://github.com/bazelbuild/bazelisk/releases/download/v1.10.1/bazelisk-linux-arm64" \
     --build-arg TENSORFLOW_SOURCE="https://github.com/tensorflow/tensorflow/archive/refs/tags/v2.6.0.tar.gz" \
-    -t tensorflow
+    -t tensorflow \
     .
 ```
