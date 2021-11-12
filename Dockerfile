@@ -11,7 +11,8 @@ RUN \
 	mv ./bazel /usr/local/bin
 
 RUN \
-	pip install numpy==1.21.3
+	pip install numpy==1.21.3 wheel && \
+	pip install keras_preprocessing --no-deps
 
 RUN \
 	wget "${TENSORFLOW_SOURCE}" -O tensorflow.tar.gz && \
