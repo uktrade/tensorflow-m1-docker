@@ -28,5 +28,6 @@ RUN \
 	bazel build --local_cpu_resources=1 //tensorflow/tools/pip_package:build_pip_package
 
 RUN \
+	cd tensorflow && \
 	./bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg
 
