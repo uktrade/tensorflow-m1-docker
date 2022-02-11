@@ -11,7 +11,7 @@ docker build \
     .
 ```
 
-At the end of the build the location of the `whl` file in the Docker image should be output to the console. If not, run the below:
+At the end of the build the location of the `whl` file in the Docker image should be output to the console. If it is not, run the below:
 
 ```bash
 docker run --rm -it -t tensorflow ls /tmp/tensorflow_pkg/
